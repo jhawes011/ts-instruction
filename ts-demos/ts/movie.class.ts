@@ -18,4 +18,7 @@ export class Movie {
     this.rating = rating;
     this.director = director;
   }
+  details(): string {
+    return `${this.title} (${this.year}) - ${this.rating} - Directed by ${this.director}`;
+  }
 }
